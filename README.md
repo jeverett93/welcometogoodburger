@@ -4,7 +4,7 @@
 
 # Welcome to GoodBurger
 
-## <h2 id="link">Live Link</h2> https://stark-stream-27997.herokuapp.com/
+## <h2 id="link">Live Link</h2> https://welcometothegoodburger.herokuapp.com/
 
 ## <h2 id="description">Description</h2>
 This is a restaurant app that lets users input the names of burgers they'd like to eat. They will be able to see their input as well as distinguish between burgers they've eaten and burger they want to eat.
