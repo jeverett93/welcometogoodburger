@@ -1,0 +1,10 @@
+body,
+html {
+  height: 100%;
+  margin: 0px;
+  background-image: url("/assets/img/goodburger.jpg");
+  background-position: center;
+  background-repeat: round;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
