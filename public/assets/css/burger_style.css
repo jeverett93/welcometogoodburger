@@ -8,3 +8,27 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.name {
+  width: 300px;
+  height: 280px;
+}
+
+header {
+  text-align: center;
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  border: solid 4px white;
+}
+
+.ate,
+.eat,
+.add {
+  border: solid 4px white;
+  background-color: lightyellow;
+}
