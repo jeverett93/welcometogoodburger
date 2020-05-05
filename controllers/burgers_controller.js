@@ -16,13 +16,15 @@ router.get("/", function(req, res) {
   });
 });
 
+// route to add new burgers
 router.post("/api/burgers", function(req, res) {
   burger.insertOne(["burger_name", "devoured"], [req.body.name, req.body.devoured], function(result) {
-    // Send back the ID of the new quote
+    // Send back the ID of the new burger
     res.json({ id: result.insertId });
   });
 });
 
+// route to update status of burger
 router.put("/api/burgers/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
@@ -44,6 +46,7 @@ router.put("/api/burgers/:id", function(req, res) {
   );
 });
 
+// route to delete burger
 router.delete("/api/burgers/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   

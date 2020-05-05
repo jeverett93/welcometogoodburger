@@ -1,3 +1,4 @@
+-- Adding values to initialize database
 INSERT INTO burgers (burger_name, devoured) VALUES ('bacon cheesburger', false);
 
 INSERT INTO burgers (burger_name, devoured) VALUES ('beyond burger', false);

@@ -1,6 +1,8 @@
+// requiring dependencies 
 const mysql = require("mysql");
 require("dotenv").config();
 
+// establishing and confirming mysql connection
 const connection = mysql.createConnection(
     process.env.JAWSDB_URL || 
     {
@@ -19,4 +21,5 @@ connection.connect(function (err) {
     console.log("connected as id " + connection.threadId);
 });
 
+// Exporting the connection for orm
 module.exports = connection;

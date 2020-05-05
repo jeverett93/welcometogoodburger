@@ -1,3 +1,4 @@
+// Importing ORM queries to support logic
 const orm = require("../config/orm.js");
 
 let burger = {

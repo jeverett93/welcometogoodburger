@@ -1,3 +1,4 @@
+-- Creating database of burgers
 CREATE DATABASE burgers_db;
 USE burgers_db;
 
