@@ -1,3 +1,4 @@
+/* setting background for page */
 body,
 html {
   height: 100%;
@@ -10,15 +11,18 @@ html {
   font-weight: bolder;
 }
 
+/* sizing goodburger icon */
 .name {
   width: 300px;
   height: 280px;
 }
 
+/* centers header */
 header {
   text-align: center;
 }
 
+/* styling container so content appears in a row */
 .container {
   margin-top: 20px;
   display: flex;
@@ -26,6 +30,7 @@ header {
   flex-wrap: wrap;
 }
 
+/* adding background color and sizing boxes with content */
 .ate,
 .eat,
 .add {
@@ -35,6 +40,7 @@ header {
   max-width: 400px;
 }
 
+/* styling lists to not show bullets and adding margin */
 li,
 .form-group {
   margin: 15px;
@@ -44,6 +50,7 @@ ul {
   list-style-type: none;
 }
 
+/* styling buttons */
 .change-devoured,
 .delete-burger,
 .submit {
@@ -51,10 +58,12 @@ ul {
   font-weight: bolder;
 }
 
+/* changing color of input box */
 #ca {
   border: solid 2px #FFBF00;
 }
 
+/* adding bottom margin to submit button */
 .submit {
   margin-bottom: 10px;
 }

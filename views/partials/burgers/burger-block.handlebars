@@ -1,8 +1,9 @@
+{{!-- how each burger in list shows up on the page with buttons --}}
 <li>
 	{{burger_name}}
 
 	<button class="change-devoured" data-id="{{id}}" data-newdevoured="{{devoured}}">
-		{{#if devoured}}EAT AGAIN!{{else}}CHOW TIME!{{/if}}
+		{{#if devoured}}EAT AGAIN!{{else}}DEVOUR!{{/if}}
 	</button>
 
 	<button class="delete-burger" data-id="{{this.id}}">DELETE!</button>

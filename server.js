@@ -1,6 +1,8 @@
+// requiring dependencies 
 const express = require("express");
 require("dotenv").config();
 
+// establishing port number
 const PORT = process.env.PORT || 8080;
 
 const app = express();
@@ -23,8 +25,8 @@ const routes = require("./controllers/burgers_controller.js");
 
 app.use(routes);
 
-// Start our server so that it can begin listening to client requests.
+// Starting server so that it can begin listening to client requests.
 app.listen(PORT, function() {
-  // Log (server-side) when our server has started
+  // Log (server-side) when server has started
   console.log("Server listening on: http://localhost:" + PORT);
 });

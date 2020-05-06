@@ -2,22 +2,25 @@
 const orm = require("../config/orm.js");
 
 let burger = {
+  // logic to select/see all burgers
     selectAll: function(cb) {
       orm.selectAll("burgers", function(res) {
         cb(res);
       });
     },
-    // The variables cols and vals are arrays.
+    // logic to insert a burger
     insertOne: function(cols, vals, cb) {
       orm.insertOne("burgers", cols, vals, function(res) {
         cb(res);
       });
     },
+    // logic to update an existing burger
     updateOne: function(objColVals, condition, cb) {
       orm.updateOne("burgers", objColVals, condition, function(res) {
         cb(res);
       });
     },
+    // logic to delete burger
     delete: function(condition, cb) {
       orm.delete("burgers", condition, function(res) {
         cb(res);
@@ -25,4 +28,5 @@ let burger = {
     }
   };
 
+  // exporting model
 module.exports = burger; 
