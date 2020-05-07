@@ -2,18 +2,6 @@
 <header><img class="name" alt="GoodBurger icon" src="/assets/img/goodburger-icon.png"></header>
 <div class="container">
 
-  {{!-- list of burgers that have been eaten --}}
-  <div class="ate">
-    <h2>Burgers you've eaten!</h2>
-    <ul>
-      {{#each burgers}}
-      {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-      {{/unless}}
-      {{/each}}
-    </ul>
-  </div>
-
   {{!-- list of burgers that have yet to be eaten --}}
   <div class="eat">
     <h2>Burger to eat!</h2>
@@ -22,6 +10,18 @@
       {{#if devoured}}
       {{> burgers/burger-block devoured=false}}
       {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+
+  {{!-- list of burgers that have been eaten --}}
+  <div class="ate">
+    <h2>Burgers you've eaten!</h2>
+    <ul>
+      {{#each burgers}}
+      {{#unless devoured}}
+      {{> burgers/burger-block devoured=true}}
+      {{/unless}}
       {{/each}}
     </ul>
   </div>
