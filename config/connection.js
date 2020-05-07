@@ -6,7 +6,7 @@ const connection = mysql.createConnection(
     process.env.JAWSDB_URL ||
     {
     host: process.env.HOST,
-    port: process.env.PORT,
+    port: 3306,
     user: process.env.USER,
     password: process.env.USER_PWD,
     database: process.env.DB

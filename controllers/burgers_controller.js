@@ -1,5 +1,7 @@
+// requiring express dependency
 const express = require("express");
 
+// establishing router
 const router = express.Router();
 
 // Import the model (burger.js) to use its database functions.
@@ -8,7 +10,7 @@ const burger = require("../models/burger.js");
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
   burger.selectAll(function(data) {
-    var hbsObject = {
+    let hbsObject = {
       burgers: data
     };
     console.log(hbsObject);
@@ -26,7 +28,7 @@ router.post("/api/burgers", function(req, res) {
 
 // route to update status of burger
 router.put("/api/burgers/:id", function(req, res) {
-  var condition = "id = " + req.params.id;
+  let condition = "id = " + req.params.id;
 
   console.log("condition", condition);
 
@@ -48,7 +50,7 @@ router.put("/api/burgers/:id", function(req, res) {
 
 // route to delete burger
 router.delete("/api/burgers/:id", function(req, res) {
-    var condition = "id = " + req.params.id;
+    let condition = "id = " + req.params.id;
   
     burger.delete(condition, function(result) {
       if (result.affectedRows == 0) {
