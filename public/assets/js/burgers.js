@@ -1,10 +1,10 @@
 // Attaches handlebars when the DOM is fully loaded.
 $(function () {
   $(".change-devoured").on("click", function (event) {
-    var id = $(this).data("id");
-    var newDevoured = $(this).data("newdevoured");
+    let id = $(this).data("id");
+    let newDevoured = $(this).data("newdevoured");
 
-    var newDevouredState = {
+    let newDevouredState = {
       devoured: newDevoured
     };
 
@@ -24,7 +24,7 @@ $(function () {
   $(".create-form").on("submit", function (event) {
     event.preventDefault();
 
-    var newBurger = {
+    let newBurger = {
       name: $("#ca").val().trim(),
       devoured: $("[name=devoured]:checked").val().trim()
     };
@@ -43,7 +43,7 @@ $(function () {
   });
 
   $(".delete-burger").on("click", function (event) {
-    var id = $(this).data("id");
+    let id = $(this).data("id");
 
     // Sends the DELETE request.
     $.ajax("/api/burgers/" + id, {
