@@ -9,7 +9,7 @@
 ## <h2 id="description">Description</h2>
 This is a restaurant app that lets users input the names of burgers they'd like to eat. They will be able to see their input as well as distinguish between burgers they've eaten and burger they want to eat.
 
-![Image of Application]()
+![Image of Application](public/assets/img/appdemo.gif)
 
 ## Table of Contents
 * <a href="#link">Live Link</a> 
@@ -60,7 +60,7 @@ SO THAT I can keep track of my burger wishlist and favorites
 * #### LinkedIn: [https://www.linkedin.com/in/joshua-everett-087a4649/](https://www.linkedin.com/in/joshua-everett-087a4649/)
 
 ## <h2 id="tests">Tests</h2>
-To run tests:
+To test:
 
 ```
 npm run test
